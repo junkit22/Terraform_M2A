@@ -1,8 +1,9 @@
+# Comment out the below if you are working on local
+
 terraform {
   backend "s3" {
-    bucket         = "junjie-terraform-state"
-    key            = "terraform/state"
-    region         = "us-east-1"
-    encrypt        = true
+    bucket = "sctp-ce7-tfstate" 
+    key    = "terraform-github-action-junjie.tfstate" # Replace the value of key to <your suggested name>.tfstate for example terraform-ex-ec2-<NAME>.tfstate
+    region = "us-east-1"
   }
 }
